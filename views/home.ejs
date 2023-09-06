@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>CSV READER</title>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <header id="header-home">
+        <h3>Csv Reader</h3>
+    </header>
+    
+    <div id="content-section">
+        <div id="container-of-content">
+            <!-- Upload file section -->
+            <div id="file-upload-section">
+                <div id="file-input-section">
+                    <form  onsubmit="return checkFileType()" action="/upload-file" method="post" enctype="multipart/form-data" >
+                    <div>
+                        <label for="name">Upload File:</label>
+
+                    </div>
+
+                    <input type="file" name="file" id='file' placeholder="Only .csv file is allowed" required>
+                    <button type="submit">upload</button>
+
+                    </form>
+
+
+                </div>
+            </div>
+            <!-- File list section -->
+            <div id="file-list-section">
+                <div id="head-of-file-list">
+                    <h4>List of Files</h4>
+                </div>
+                <div id="content-of-file-list">
+                    <%for(let i=0;i<result.length;i++){ %>
+                        <div class="list-item">
+                            <div class="name-section">
+                                <div class="file-name">
+                                    <%=result[i].originalname%>
+                                </div>
+    
+                            </div>
+                            <div class="button-container">
+                                <div class="delete-button-section">
+                                    <a href="/delete/<%=result[i].id%>"><img src="./image/delete.png" alt=""></a>
+    
+                                </div>
+                                <div class="open-button-section">
+                                    <a href="/open-file/<%=result[i].id%>"><img src="./image/share (1).png" alt=""></a>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+
+                    <%}%>
+                  
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="/js/checkFileType.js">
+       
+    </script>
+
+</body>
+
+</html>

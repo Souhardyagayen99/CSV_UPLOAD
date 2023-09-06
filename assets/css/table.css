@@ -1,0 +1,124 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: -1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styled-table thead tr {
+    background-color: #091c4e;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#content{
+    display: inline-flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #32aed7;
+
+   
+
+}
+#head-table-container{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(88, 155, 177);
+   
+}
+
+#heading-part{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(25, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table-container{
+    display: inline-block;
+    height: 90%;
+    width: 100%;
+    background-color: #dddddd;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+
+.button{
+    display: inline-block;
+
+}
+.search-part{
+    display: inline-block;
+}
+.button a button{
+    margin-right: 50px;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 50px;
+    background-color: #32aed7;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.search-part input{
+    height: 30px;
+    width: 300px;
+    border: none;
+    outline: none;
+    background-color: #5a6e75;
+    border-radius: 5px;
+    color:red
+    
+}
+.search-part input::placeholder{
+    
+    color:red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+} 
+
+.search-part button{
+    height: 30px;
+    width: 55px;
+    border: none;
+    outline: none;
+    background-color: #32aed7;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
